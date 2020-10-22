@@ -18,7 +18,7 @@ class Server {
 /// Target
 protocol API {
     func getContent(
-        url: URL,
+        ofURL url: URL,
         completion: (Result<String, APIError>) -> Void
     )
 }
@@ -33,7 +33,7 @@ class ServerAdapter: API {
     }
     
     func getContent(
-        url: URL,
+        ofURL url: URL,
         completion: (Result<String, APIError>) -> Void
     ) {
         guard
@@ -48,17 +48,19 @@ class ServerAdapter: API {
             host: host,
             path: url.path
         ) { (data, error) in
+            let result: Result<String, APIError>
             if let data = data {
                 if let content = String(data: data, encoding: .utf8) {
-                    completion(.success(content))
+                    result = .success(content)
                 } else {
-                    completion(.failure(.invalidContent))
+                    result = .failure(.invalidContent)
                 }
             } else if let error = error {
-                completion(.failure(.generic(error)))
+                result = .failure(.generic(error))
             } else {
-                completion(.failure(.unknown))
+                result = .failure(.unknown)
             }
+            completion(result)
         }
     }
 }
@@ -70,13 +72,12 @@ enum APIError: Error {
     case unknown
 }
 
-
 // Client
 let server = Server()
 let serverAdapter = ServerAdapter(server: server)
 
 serverAdapter.getContent(
-    url: URL(string: "https://github.com")!
+    ofURL: URL(string: "https://github.com")!
 ) { result in
     switch result {
     case let .success(content):
