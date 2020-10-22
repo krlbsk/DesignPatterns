@@ -6,17 +6,20 @@ class MyViewController: UIViewController {
     private lazy var contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
-        view.addSubview(label)
+        view.addSubview(errorLabel)
         return view
     }()
     
-    private let label: UILabel = {
+    private lazy var errorLabel: UILabel = {
         let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
+        label.frame = CGRect(x: 120, y: 200, width: 200, height: 50)
+        label.attributedText = errorTextBuilderDirector.construct()
         return label
     }()
+    
+    private let errorTextBuilderDirector = ErrorTextBuilderDirector(
+        builder: AttributedStringBuilderImpl(text: "Error occurred!")
+    )
     
     override func loadView() {
         self.view = contentView
