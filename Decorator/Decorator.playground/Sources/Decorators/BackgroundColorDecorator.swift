@@ -13,7 +13,6 @@ public class BackgroundColorDecorator: UIView, ButtonDecorator {
         self.color = color
         super.init(frame: .zero)
         addSubview(button)
-        button.frame = CGRect(x: 0, y: 0, width: 200, height: 20)
     }
     
     public required init?(coder: NSCoder) {
@@ -23,5 +22,10 @@ public class BackgroundColorDecorator: UIView, ButtonDecorator {
     public func tap() {
         button.tap()
         backgroundColor = color
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        button.frame = bounds
     }
 }

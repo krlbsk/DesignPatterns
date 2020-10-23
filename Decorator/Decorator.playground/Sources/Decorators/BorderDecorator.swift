@@ -16,7 +16,6 @@ public class BorderDecorator: UIView, ButtonDecorator {
         self.borderColor = borderColor
         super.init(frame: .zero)
         addSubview(button)
-        button.frame = CGRect(x: 0, y: 0, width: 200, height: 20)
     }
     
     public required init?(coder: NSCoder) {
@@ -27,5 +26,10 @@ public class BorderDecorator: UIView, ButtonDecorator {
         button.tap()
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        button.frame = bounds
     }
 }
