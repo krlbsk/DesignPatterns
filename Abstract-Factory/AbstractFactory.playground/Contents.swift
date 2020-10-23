@@ -7,18 +7,28 @@ class MyViewController : UIViewController {
         let view = UIView()
         view.backgroundColor = .white
         view.addSubview(button)
+        view.addSubview(label)
         return view
     }()
     
-    private let button: UIButton = {
-        let button = UIButton(type: .system)
-        button.frame = CGRect(x: 100, y: 200, width: 200, height: 20)
-        button.setTitle("Hello World!", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+    private lazy var button: UIButton = {
+        let button = viewFactory.createButton()
+        button.setTitle("Tap here", for: .normal)
         return button
     }()
     
+    private lazy var label: UILabel = {
+        let label = viewFactory.createLabel()
+        label.text = "Hello World!"
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private let viewFactory = StandardViewFactory()
+    
     override func loadView() {
+        button.frame = CGRect(x: 100, y: 200, width: 200, height: 20)
+        label.frame = CGRect(x: 100, y: 250, width: 200, height: 20)
         self.view = contentView
     }
 }
