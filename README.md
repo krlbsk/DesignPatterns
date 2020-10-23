@@ -11,7 +11,7 @@
 * [Adapter](https://github.com/krlbsk/DesignPatterns/tree/main/Adapter/Adapter.playground)
 * Bridge
 * Composite
-* Decorator
+* [Decorator](https://github.com/krlbsk/DesignPatterns/tree/main/Decorator/Decorator.playground)
 * Facade
 * Flyweight
 * Proxy
