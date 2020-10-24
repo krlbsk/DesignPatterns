@@ -1,8 +1,16 @@
+import UIKit
+
 public class ViewContext {
     
-    private lazy var state: ViewState = NormalState(context: self)
+    private let loader: UIActivityIndicatorView?
+    private lazy var state: ViewState = NormalState(
+        context: self,
+        loader: loader
+    )
     
-    public init() { }
+    public init(loader: UIActivityIndicatorView?) {
+        self.loader = loader
+    }
     
     public func changeState(_ state: ViewState) {
         self.state = state

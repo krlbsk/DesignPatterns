@@ -8,6 +8,7 @@ class MyViewController : UIViewController {
         view.backgroundColor = .white
         view.addSubview(startLoadingButton)
         view.addSubview(stopLoadingButton)
+        view.addSubview(loader)
         return view
     }()
     
@@ -37,7 +38,15 @@ class MyViewController : UIViewController {
         return button
     }()
     
-    private let viewContext = ViewContext()
+    private let loader: UIActivityIndicatorView = {
+        let loader = UIActivityIndicatorView(style: .medium)
+        loader.frame = CGRect(x: 150, y: 300, width: 50, height: 50)
+        loader.color = .blue
+        loader.hidesWhenStopped = true
+        return loader
+    }()
+    
+    private lazy var viewContext = ViewContext(loader: loader)
     
     @objc private func loadData() {
         print("Send request")
