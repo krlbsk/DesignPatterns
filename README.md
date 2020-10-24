@@ -5,7 +5,7 @@
 * [Builder](https://github.com/krlbsk/DesignPatterns/tree/main/Builder/Builder.playground)
 * Factory Method
 * Prototype
-* Singleton
+* [Singleton](https://github.com/krlbsk/DesignPatterns/tree/main/Singleton/Singleton.playground)
 
 ## Structural
 * [Adapter](https://github.com/krlbsk/DesignPatterns/tree/main/Adapter/Adapter.playground)
