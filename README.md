@@ -25,7 +25,7 @@
 * Memento
 * Observer
 * State
-* Strategy
+* [Strategy](https://github.com/krlbsk/DesignPatterns/tree/main/Strategy/Strategy.playground)
 * Template Method
 * Visitor
 
