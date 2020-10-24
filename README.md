@@ -12,7 +12,7 @@
 * Bridge
 * Composite
 * [Decorator](https://github.com/krlbsk/DesignPatterns/tree/main/Decorator/Decorator.playground)
-* Facade
+* [Facade](https://github.com/krlbsk/DesignPatterns/tree/main/Facade/Facade.playground)
 * Flyweight
 * Proxy
 
