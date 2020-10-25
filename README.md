@@ -23,7 +23,7 @@
 * Iterator
 * Mediator
 * Memento
-* Observer
+* [Observer](https://github.com/krlbsk/gof-design-patterns/tree/main/Observer/Observer.playground)
 * [State](https://github.com/krlbsk/DesignPatterns/tree/main/State/State.playground)
 * [Strategy](https://github.com/krlbsk/DesignPatterns/tree/main/Strategy/Strategy.playground)
 * Template Method
