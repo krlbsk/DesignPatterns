@@ -18,7 +18,7 @@
 
 ## Behavioral
 * Chain of Responsibility
-* Command
+* [Command](https://github.com/krlbsk/gof-design-patterns/tree/main/Command/Command.playground)
 * Interpreter
 * Iterator
 * Mediator
