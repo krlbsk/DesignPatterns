@@ -10,13 +10,14 @@ class MyViewController : UIViewController {
         return view
     }()
     
-    private let label: UILabel = {
-        let label = UILabel()
+    private lazy var label: UILabel = {
+        let label = labelCreator.createAndSetup()
         label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
         label.text = "Hello World!"
-        label.textColor = .black
         return label
     }()
+    
+    private let labelCreator: LabelCreator = PremiumLabelCreator()
     
     override func loadView() {
         self.view = contentView
