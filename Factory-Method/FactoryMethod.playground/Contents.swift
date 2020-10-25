@@ -1,7 +1,7 @@
 import UIKit
 import PlaygroundSupport
 
-class MyViewController : UIViewController {
+class MyViewController: UIViewController {
     
     private lazy var contentView: UIView = {
         let view = UIView()
