@@ -1,18 +1,18 @@
 # Examples of GoF Design Patterns
 
 ## Creational
-* [Abstract Factory](https://github.com/krlbsk/DesignPatterns/tree/main/Abstract-Factory/AbstractFactory.playground)
-* [Builder](https://github.com/krlbsk/DesignPatterns/tree/main/Builder/Builder.playground)
+* [Abstract Factory](https://github.com/krlbsk/gof-design-patterns/tree/main/Abstract-Factory/AbstractFactory.playground)
+* [Builder](https://github.com/krlbsk/gof-design-patterns/tree/main/Builder/Builder.playground)
 * [Factory Method](https://github.com/krlbsk/gof-design-patterns/tree/main/Factory-Method/FactoryMethod.playground)
 * [Prototype](https://github.com/krlbsk/gof-design-patterns/tree/main/Prototype/Prototype.playground)
-* [Singleton](https://github.com/krlbsk/DesignPatterns/tree/main/Singleton/Singleton.playground)
+* [Singleton](https://github.com/krlbsk/gof-design-patterns/tree/main/Singleton/Singleton.playground)
 
 ## Structural
-* [Adapter](https://github.com/krlbsk/DesignPatterns/tree/main/Adapter/Adapter.playground)
+* [Adapter](https://github.com/krlbsk/gof-design-patterns/tree/main/Adapter/Adapter.playground)
 * Bridge
 * Composite
-* [Decorator](https://github.com/krlbsk/DesignPatterns/tree/main/Decorator/Decorator.playground)
-* [Facade](https://github.com/krlbsk/DesignPatterns/tree/main/Facade/Facade.playground)
+* [Decorator](https://github.com/krlbsk/gof-design-patterns/tree/main/Decorator/Decorator.playground)
+* [Facade](https://github.com/krlbsk/gof-design-patterns/tree/main/Facade/Facade.playground)
 * Flyweight
 * Proxy
 
@@ -24,8 +24,8 @@
 * Mediator
 * Memento
 * [Observer](https://github.com/krlbsk/gof-design-patterns/tree/main/Observer/Observer.playground)
-* [State](https://github.com/krlbsk/DesignPatterns/tree/main/State/State.playground)
-* [Strategy](https://github.com/krlbsk/DesignPatterns/tree/main/Strategy/Strategy.playground)
+* [State](https://github.com/krlbsk/gof-design-patterns/tree/main/State/State.playground)
+* [Strategy](https://github.com/krlbsk/gof-design-patterns/tree/main/Strategy/Strategy.playground)
 * Template Method
 * Visitor
 
