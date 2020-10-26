@@ -26,7 +26,7 @@
 * [Observer](https://github.com/krlbsk/gof-design-patterns/tree/main/Observer/Observer.playground)
 * [State](https://github.com/krlbsk/gof-design-patterns/tree/main/State/State.playground)
 * [Strategy](https://github.com/krlbsk/gof-design-patterns/tree/main/Strategy/Strategy.playground)
-* [Template Method](https://github.com/krlbsk/gof-design-patterns/tree/main/Template-Method/TemplateMethod.playground0
+* [Template Method](https://github.com/krlbsk/gof-design-patterns/tree/main/Template-Method/TemplateMethod.playground)
 * Visitor
 
 Based on book [Design Patterns: Elements of Reusable Object-Oriented Software by E. Gamma, R. Helm, R. Johnson, J. Vlissides](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
