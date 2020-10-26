@@ -4,7 +4,7 @@
 * [Abstract Factory](https://github.com/krlbsk/DesignPatterns/tree/main/Abstract-Factory/AbstractFactory.playground)
 * [Builder](https://github.com/krlbsk/DesignPatterns/tree/main/Builder/Builder.playground)
 * [Factory Method](https://github.com/krlbsk/gof-design-patterns/tree/main/Factory-Method/FactoryMethod.playground)
-* Prototype
+* [Prototype](https://github.com/krlbsk/gof-design-patterns/tree/main/Prototype/Prototype.playground)
 * [Singleton](https://github.com/krlbsk/DesignPatterns/tree/main/Singleton/Singleton.playground)
 
 ## Structural
