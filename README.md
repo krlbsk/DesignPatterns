@@ -9,7 +9,7 @@
 
 ## Structural
 * [Adapter](https://github.com/krlbsk/gof-design-patterns/tree/main/Adapter/Adapter.playground)
-* Bridge
+* [Bridge](https://github.com/krlbsk/gof-design-patterns/tree/main/Bridge/Bridge.playground)
 * Composite
 * [Decorator](https://github.com/krlbsk/gof-design-patterns/tree/main/Decorator/Decorator.playground)
 * [Facade](https://github.com/krlbsk/gof-design-patterns/tree/main/Facade/Facade.playground)
