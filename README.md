@@ -20,7 +20,7 @@
 * Chain of Responsibility
 * [Command](https://github.com/krlbsk/gof-design-patterns/tree/main/Command/Command.playground)
 * Interpreter
-* Iterator
+* [Iterator](https://github.com/krlbsk/gof-design-patterns/tree/main/Iterator/Iterator.playground)
 * Mediator
 * Memento
 * [Observer](https://github.com/krlbsk/gof-design-patterns/tree/main/Observer/Observer.playground)
