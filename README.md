@@ -17,7 +17,7 @@
 * Proxy
 
 ## Behavioral
-* Chain of Responsibility
+* [Chain of Responsibility](https://github.com/krlbsk/gof-design-patterns/tree/main/Chain-Of-Responsibility/ChainOfResponsibility.playground)
 * [Command](https://github.com/krlbsk/gof-design-patterns/tree/main/Command/Command.playground)
 * Interpreter
 * [Iterator](https://github.com/krlbsk/gof-design-patterns/tree/main/Iterator/Iterator.playground)
