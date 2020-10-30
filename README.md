@@ -14,7 +14,7 @@
 * [Decorator](https://github.com/krlbsk/gof-design-patterns/tree/main/Decorator/Decorator.playground)
 * [Facade](https://github.com/krlbsk/gof-design-patterns/tree/main/Facade/Facade.playground)
 * Flyweight
-* Proxy
+* [Proxy](https://github.com/krlbsk/gof-design-patterns/tree/main/Proxy/Proxy.playground)
 
 ## Behavioral
 * [Chain of Responsibility](https://github.com/krlbsk/gof-design-patterns/tree/main/Chain-Of-Responsibility/ChainOfResponsibility.playground)
