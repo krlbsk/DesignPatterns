@@ -1,6 +1,6 @@
 import Foundation
 
-let state = TimeState(date: Date())
+let state = Time(date: Date())
 let originator = TimeOriginator(state: state)
 let caretaker = TimeCaretaker(originator: originator)
 

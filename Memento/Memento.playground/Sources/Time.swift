@@ -1,6 +1,7 @@
 import Foundation
 
-public struct TimeState {
+/// State
+public struct Time {
     public let date: Date
     
     public init(date: Date) {

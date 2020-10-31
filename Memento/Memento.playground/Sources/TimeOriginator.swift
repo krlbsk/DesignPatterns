@@ -1,14 +1,14 @@
 import Foundation
 
 public class TimeOriginator {
-    private var state: TimeState
+    private var state: Time
     
-    public init(state: TimeState) {
+    public init(state: Time) {
         self.state = state
     }
     
     public func freezeCurrentTime() {
-        state = TimeState(date: Date())
+        state = Time(date: Date())
     }
     
     public func setMemento(_ memento: TimeMemento) {

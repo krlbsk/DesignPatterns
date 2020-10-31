@@ -1,7 +1,7 @@
 import Foundation
 
 public struct TimeMemento {
-    public var state: TimeState
+    public var state: Time
     public var time: String
     
     private let formatter: DateFormatter = {
@@ -10,7 +10,7 @@ public struct TimeMemento {
         return formatter
     }()
     
-    public init(state: TimeState) {
+    public init(state: Time) {
         self.state = state
         time = formatter.string(from: state.date)
     }
