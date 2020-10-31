@@ -10,17 +10,13 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
         originator.freezeCurrentTime()
         caretaker.save()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            originator.freezeCurrentTime()
-            caretaker.save()
-            
-            print("Before move back")
-            caretaker.showTimeline()
-            
-            caretaker.moveBack()
-            
-            print("After move back")
-            caretaker.showTimeline()
-        }
+        
+        print("Before move back")
+        caretaker.showTimeline()
+        
+        caretaker.moveBack()
+        
+        print("After move back")
+        caretaker.showTimeline()
     }
 }
