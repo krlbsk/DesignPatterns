@@ -13,7 +13,7 @@
 * [Composite](https://github.com/krlbsk/gof-design-patterns/tree/main/Composite/Composite.playground)
 * [Decorator](https://github.com/krlbsk/gof-design-patterns/tree/main/Decorator/Decorator.playground)
 * [Facade](https://github.com/krlbsk/gof-design-patterns/tree/main/Facade/Facade.playground)
-* Flyweight
+* [Flyweight](https://github.com/krlbsk/gof-design-patterns/tree/main/Flyweight/Flyweight.playground)
 * [Proxy](https://github.com/krlbsk/gof-design-patterns/tree/main/Proxy/Proxy.playground)
 
 ## Behavioral
