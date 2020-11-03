@@ -14,12 +14,7 @@ public class DataMediator {
     
     public func download() {
         downloader.download { [weak self] (result) in
-            switch result {
-            case let .success(data):
-                self?.label.text = data
-            case .failure:
-                break
-            }
+            self?.label.text = try? result.get()
         }
     }
 }
