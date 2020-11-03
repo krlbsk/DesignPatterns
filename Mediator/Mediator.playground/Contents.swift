@@ -1,6 +1,6 @@
 import UIKit
 import PlaygroundSupport
-
+    
 class MyViewController: UIViewController {
     private lazy var contentView: UIView = {
         let view = UIView()
@@ -22,11 +22,21 @@ class MyViewController: UIViewController {
         let button = UIButton(type: .system)
         button.frame = CGRect(x: 100, y: 250, width: 200, height: 20)
         button.setTitle("Sync", for: .normal)
+        button.addTarget(self, action: #selector(download), for: .touchUpInside)
         return button
     }()
     
+    private lazy var dataMediator = DataMediator(
+        label: label,
+        downloader: DataDownloaderImpl()
+    )
+    
     override func loadView() {
         view = contentView
+    }
+    
+    @objc private func download() {
+        dataMediator.download()
     }
 }
 
