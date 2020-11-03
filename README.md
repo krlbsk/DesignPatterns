@@ -21,7 +21,7 @@
 * [Command](https://github.com/krlbsk/gof-design-patterns/tree/main/Command/Command.playground)
 * Interpreter
 * [Iterator](https://github.com/krlbsk/gof-design-patterns/tree/main/Iterator/Iterator.playground)
-* Mediator
+* [Mediator](https://github.com/krlbsk/gof-design-patterns/tree/main/Mediator/Mediator.playground)
 * [Memento](https://github.com/krlbsk/gof-design-patterns/tree/main/Memento/Memento.playground)
 * [Observer](https://github.com/krlbsk/gof-design-patterns/tree/main/Observer/Observer.playground)
 * [State](https://github.com/krlbsk/gof-design-patterns/tree/main/State/State.playground)
