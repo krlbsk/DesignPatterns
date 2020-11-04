@@ -19,7 +19,7 @@
 ## Behavioral
 * [Chain of Responsibility](https://github.com/krlbsk/gof-design-patterns/tree/main/Chain-Of-Responsibility/ChainOfResponsibility.playground)
 * [Command](https://github.com/krlbsk/gof-design-patterns/tree/main/Command/Command.playground)
-* Interpreter
+* [Interpreter](https://github.com/krlbsk/gof-design-patterns/tree/main/Interpreter/Interpreter.playground)
 * [Iterator](https://github.com/krlbsk/gof-design-patterns/tree/main/Iterator/Iterator.playground)
 * [Mediator](https://github.com/krlbsk/gof-design-patterns/tree/main/Mediator/Mediator.playground)
 * [Memento](https://github.com/krlbsk/gof-design-patterns/tree/main/Memento/Memento.playground)
