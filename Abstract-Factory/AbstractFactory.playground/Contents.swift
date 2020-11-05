@@ -1,35 +1,91 @@
 import UIKit
 import PlaygroundSupport
 
-class MyViewController : UIViewController {
+class MyViewController: UIViewController {
     
     private lazy var contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
-        view.addSubview(button)
-        view.addSubview(label)
+        view.addSubview(standardViews)
+        view.addSubview(premiumViews)
         return view
     }()
     
-    private lazy var button: UIButton = {
-        let button = viewFactory.createButton()
-        button.setTitle("Tap here", for: .normal)
-        return button
+    private lazy var standardViews: UIStackView = {
+        let viewFactory = StandardViewFactory()
+        
+        let button = makeButton(viewFactory: viewFactory, title: "Standard button")
+        let label = makeLabel(viewFactory: viewFactory, text: "Standard label")
+        
+        let stackView = UIStackView(arrangedSubviews: [
+            button,
+            label
+        ])
+        stackView.axis = .vertical
+        stackView.spacing = 8
+        return stackView
     }()
     
-    private lazy var label: UILabel = {
+    private lazy var premiumViews: UIStackView = {
+        let viewFactory = PremiumViewFactory()
+        
+        let button = makeButton(viewFactory: viewFactory, title: "Premium button")
+        let label = makeLabel(viewFactory: viewFactory, text: "Premium label")
+        
+        let stackView = UIStackView(arrangedSubviews: [
+            button,
+            label
+        ])
+        stackView.axis = .vertical
+        stackView.spacing = 8
+        return stackView
+    }()
+    
+    private func makeLabel(
+        viewFactory: ViewFactory,
+        text: String
+    ) -> UILabel {
         let label = viewFactory.createLabel()
-        label.text = "Hello World!"
+        label.text = text
         label.textAlignment = .center
         return label
-    }()
+    }
     
-    private let viewFactory = StandardViewFactory()
+    private func makeButton(
+        viewFactory: ViewFactory,
+        title: String
+    ) -> UIButton {
+        let button = viewFactory.createButton()
+        button.setTitle(title, for: .normal)
+        return button
+    }
     
     override func loadView() {
-        button.frame = CGRect(x: 100, y: 200, width: 200, height: 20)
-        label.frame = CGRect(x: 100, y: 250, width: 200, height: 20)
-        self.view = contentView
+        view = contentView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        layoutStandardViews()
+        layoutPremiumViews()
+    }
+    
+    private func layoutStandardViews() {
+        standardViews.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            standardViews.topAnchor.constraint(equalTo: view.topAnchor, constant: 24),
+            standardViews.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
+            standardViews.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24)
+        ])
+    }
+    
+    private func layoutPremiumViews() {
+        premiumViews.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            premiumViews.topAnchor.constraint(equalTo: standardViews.bottomAnchor, constant: 24),
+            premiumViews.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
+            premiumViews.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24)
+        ])
     }
 }
 
