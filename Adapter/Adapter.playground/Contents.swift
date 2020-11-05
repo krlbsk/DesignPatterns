@@ -8,8 +8,8 @@ serverAdapter.getContent(
 ) { result in
     switch result {
     case let .success(content):
-        print("Retrieved content = \(content)")
+        print("Content: \(content)")
     case let .failure(error):
-        print("Error while retrieving content = \(error)")
+        print("Error: \(error)")
     }
 }

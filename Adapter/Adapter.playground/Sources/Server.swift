@@ -12,7 +12,7 @@ public class Server {
         completion: (Data?, Error?) -> Void
     ) {
         completion(
-            "This is a request content".data(using: .utf8),
+            "This is a response".data(using: .utf8),
             nil
         )
     }
