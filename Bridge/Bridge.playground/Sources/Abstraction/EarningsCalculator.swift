@@ -1,7 +1,7 @@
 public class EarningsCalculator {
-    private let implementor: JobEarningsCalculatorImpl
+    private let implementor: EarningsCalculatorImpl
     
-    public init(implementor: JobEarningsCalculatorImpl) {
+    public init(implementor: EarningsCalculatorImpl) {
         self.implementor = implementor
     }
     

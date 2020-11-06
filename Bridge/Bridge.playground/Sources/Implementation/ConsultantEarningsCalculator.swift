@@ -1,4 +1,4 @@
-public class ConsultantJobEarningsCalculator: JobEarningsCalculatorImpl {
+public class ConsultantEarningsCalculator: EarningsCalculatorImpl {
     private static let dolarsPerHour = 150
     private static let avarageCommutingCostPerMonthInDolars = 500
     

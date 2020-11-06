@@ -1,4 +1,4 @@
-public class TaxCalculator: EarningsCalculator {
+public class EarningsTaxCalculator: EarningsCalculator {
     private static let taxRate = 0.19
     
     public override func calculate() -> Double {
